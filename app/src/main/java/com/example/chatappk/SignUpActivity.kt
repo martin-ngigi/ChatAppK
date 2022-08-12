@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -62,6 +63,21 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun signUpMethod(email: String, password: String) {
+        //validate if inputs are empty or not
+        if (TextUtils.isEmpty(edtName.text.toString())){
+            edtName.setError("Name Field is empty")
+            return
+        }
+        else if (TextUtils.isEmpty(email)){
+            edtEmail.setError("Email Field is empty")
+            return
+        }
+        else if (TextUtils.isEmpty(password)){
+            edtPassword.setError("Password Field is empty")
+            return
+        }
+
+
         alertDialog.show()
 
         //creating new user account

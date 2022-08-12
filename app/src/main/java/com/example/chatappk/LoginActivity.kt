@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -58,6 +59,16 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun loginMethod(email : String, password : String) {
+
+        if (TextUtils.isEmpty(email)){
+            edtEmail.setError("Email Field is empty")
+            return
+        }
+        else if (TextUtils.isEmpty(password)){
+            edtPassword.setError("Password Field is empty")
+            return
+        }
+
 
         alertDialog.show()
 
