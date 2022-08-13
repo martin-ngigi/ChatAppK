@@ -29,6 +29,9 @@ class LoginActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btn_login)
         btnSignUp = findViewById(R.id.btn_signup)
 
+        //hide action bar
+        supportActionBar?.hide()
+
         firebaseAuth = FirebaseAuth.getInstance()
 
         //alert dialog
@@ -79,6 +82,7 @@ class LoginActivity : AppCompatActivity() {
                     alertDialog.dismiss()
                     val intent = Intent(this@LoginActivity, MainActivity::class.java)
                     startActivity(intent)
+                    finish()
                 }
                 else{
                     //login failed
