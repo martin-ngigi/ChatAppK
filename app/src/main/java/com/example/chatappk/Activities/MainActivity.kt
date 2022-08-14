@@ -1,4 +1,4 @@
-package com.example.chatappk
+package com.example.chatappk.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,9 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.chatappk.Adapters.AdapterUser
+import com.example.chatappk.Models.ModelUser
+import com.example.chatappk.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 

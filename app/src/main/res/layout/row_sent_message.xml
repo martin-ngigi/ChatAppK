@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:padding="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            >
+
+            <TextView
+                android:id="@+id/sent_msgTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background"
+                android:textColor="@color/white"
+                android:text="This is the Sent Message"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/abril_fatface_regular"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:id="@+id/timeSentTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:layout_below="@id/sent_msgTV"
+                android:textColor="@color/blue"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

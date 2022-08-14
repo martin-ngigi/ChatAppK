@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:padding="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:id="@+id/receive_msgTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_background"
+                android:textColor="@color/blue"
+                android:text="This is the Received Message"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/abril_fatface_regular"
+                android:textStyle="bold"
+                android:padding="7dp"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/timeReceivedTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/receive_msgTV"
+                android:textColor="@color/blue"
+                android:layout_alignParentLeft="true"
+                />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
